@@ -18,10 +18,9 @@ const Signup = () => {
         try {
             const response = await axios.post('/api/signup', formData);
             console.log('Signup successful. Token:', response.data.token);
-            // Redirect or perform actions upon successful signup
-        } catch (error) {
+        } 
+        catch (error) {
             console.error('Error occurred during signup:', error);
-            // Handle signup error
         }
     };
 
